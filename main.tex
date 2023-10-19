@@ -1,0 +1,59 @@
+\documentclass[a4paper]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{amsfonts, amssymb}
+\usepackage{amsthm}
+\usepackage{amsrefs}
+\usepackage[margin=1in]{geometry}
+\usepackage{mathtools}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    citecolor=black,
+    citebordercolor=orange,
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Factorization of Complex Numbers in the Form a+bi over Quaternion Algebras},
+    pdfauthor={Cédric Skwar},
+    pdfpagemode=FullScreen,
+}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhdr{}
+
+\lhead{Cédric Skwar}
+\rhead{Page \thepage}
+
+\title{Factorization of Complex Numbers in the Form \(a + bi\) over Quaternion Algebras}
+\author{Cédric Skwar}
+\date{October 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{Definitions}
+Quaternions are an extension of the complex numbers, defined as \( q = a + bi + cj + dk \), where \( a, b, c, d \) are real numbers and \( i, j, k \) are the quaternion units, as introduced by Hamilton \cite{hamilton1847elements}. Unlike real or complex numbers, quaternions are noncommutative, meaning \( xy \neq yx \) in general \cite{conway1997quaternions}. 
+In terms of properties, quaternions are associative and distribute over addition, but they lack commutativity for multiplication \cite{conway1997quaternions}. They can be understood as a generalization of complex numbers, which can be represented as quaternions with \( c = d = 0 \) \cite{kuipers1999quaternions}.
+\begin{table}[h]
+    \centering
+    \begin{tabular}{ccccc}
+        \( \downarrow \rightarrow \) & \( 1 \) & \( i \) & \( j \) & \( k \) \\
+        \( 1 \) & \( 1 \) & \( i \) & \( j \) & \( k \) \\
+        \( i \) & \( i \) & \( -1 \) & \( k \) & \( -j \) \\
+        \( j \) & \( j \) & \( -k \) & \( -1 \) & \( i \) \\
+        \( k \) & \( k \) & \( j \) & \( -i \) & \( -1 \) \\
+    \end{tabular}
+    \caption{Quaternion multiplication table. Note the noncommutative nature; for example, \( ij = k \) but \( ji = -k \) \cite{ward1997quaternions}.}
+    \label{tab:mult_table}
+\end{table}
+
+
+\bibliography{bib/introduction}
+
+\end{document}
+
